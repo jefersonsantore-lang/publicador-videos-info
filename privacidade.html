@@ -1,1 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Política de Privacidade do Publicador de Vídeos.">
+  <title>Política de Privacidade — Publicador de Vídeos</title>
+  <style>
+    body {
+      max-width: 760px;
+      margin: 48px auto;
+      padding: 0 20px;
+      font: 17px/1.6 Arial, sans-serif;
+      color: #202124;
+    }
+    h1, h2 { line-height: 1.25; }
+    a { color: #0759c7; }
+  </style>
+</head>
+<body>
+  <header>
+    <p><a href="index.html">← Página do aplicativo</a></p>
+    <h1>Política de Privacidade</h1>
+    <p>Última atualização: 30 de outubro de 2026</p>
+  </header>
 
+  <main>
+    <h2>1. Quem opera o aplicativo</h2>
+    <p>
+      O Publicador de Vídeos é um script executado localmente pelo usuário em
+      seu computador Windows. Para questões de privacidade, entre em contato
+      pelo endereço informado no final desta página.
+    </p>
+
+    <h2>2. Informações usadas pelo programa</h2>
+    <p>
+      O programa acessa os arquivos MP4 que encontra nas pastas monitoradas.
+      Para publicar, usa o nome do arquivo como base para o título e envia o
+      vídeo e os dados necessários às APIs do TikTok e do YouTube. A descrição
+      do YouTube pode ser enviada se o usuário a configurar.
+    </p>
+    <p>
+      O programa também usa credenciais e tokens de autorização das contas.
+      Conforme a configuração, eles podem ficar em arquivos locais do programa,
+      como .env, tiktok_token.json e youtube_token.json. Um banco SQLite local
+      registra o hash do vídeo, o nome do arquivo, o status de publicação em
+      cada plataforma e a data da última atualização.
+    </p>
+
+    <h2>3. Como as informações são utilizadas</h2>
+    <p>
+      Os vídeos e dados relacionados são usados para realizar as publicações
+      solicitadas nas contas conectadas e para acompanhar o estado do
+      processamento. O programa não deve ser configurado para enviar conteúdo
+      que o usuário não queira publicar.
+    </p>
+    <p>
+      Quando a publicação nas plataformas é concluída, o arquivo pode ser
+      movido para a pasta local de vídeos publicados. Se houver falha, ele
+      pode permanecer na pasta de saída para uma nova tentativa.
+    </p>
+
+    <h2>4. Compartilhamento com plataformas</h2>
+    <p>
+      Para realizar as publicações, os dados necessários são transmitidos ao
+      TikTok e ao Google/YouTube por meio de suas APIs. O tratamento feito por
+      esses serviços segue as políticas de privacidade deles:
+    </p>
+    <ul>
+      <li>
+        <a href="https://www.tiktok.com/legal/page/row/privacy-policy/en">
+          Política de Privacidade do TikTok
+        </a>
+      </li>
+      <li>
+        <a href="https://policies.google.com/privacy">
+          Política de Privacidade do Google
+        </a>
+      </li>
+    </ul>
+
+    <h2>5. Armazenamento e segurança</h2>
+    <p>
+      O histórico e os arquivos de autorização são armazenados localmente no
+      computador, conforme a configuração do programa. Proteja o acesso ao
+      computador e não compartilhe arquivos que contenham tokens, senhas ou
+      segredos de cliente. O operador deste aplicativo não recebe esses
+      arquivos por meio do script.
+    </p>
+
+    <h2>6. Retenção e exclusão</h2>
+    <p>
+      Os arquivos de vídeo permanecem no computador até que o usuário os mova
+      ou exclua. O histórico local permanece no banco de dados do programa
+      até ser removido pelo usuário. Os tokens podem ser removidos dos arquivos
+      locais e a autorização pode ser revogada nas configurações de segurança
+      ou aplicativos conectados das respectivas plataformas.
+    </p>
+    <p>
+      Excluir um arquivo ou token local não remove publicações já enviadas às
+      plataformas. Para removê-las, use os recursos da plataforma correspondente.
+    </p>
+
+    <h2>7. Página hospedada no GitHub Pages</h2>
+    <p>
+      Esta página informativa é hospedada pelo GitHub Pages. A visita ao site
+      pode envolver o processamento técnico de dados de conexão pelo GitHub,
+      conforme os termos e a política de privacidade do GitHub.
+    </p>
+
+    <h2>8. Alterações e contato</h2>
+    <p>
+      Esta política pode ser atualizada se o funcionamento do aplicativo
+      mudar. Para perguntas sobre privacidade, escreva para
+      <a href="mailto:jeferson.santore@gmail.com">jeferson.santore@gmail.com</a>.
+    </p>
+
+    <p><a href="termos.html">Leia também os Termos de Serviço.</a></p>
+  </main>
+</body>
+</html>
